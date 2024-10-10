@@ -1,0 +1,7 @@
+@host=https://localhost:7241
+
+Get {{host}}/dinners/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NWViZGMzMi03MTExLTQ0YWUtYmM3NC1kY2I1ZDBjYzUzNGEiLCJnaXZlbl9uYW1lIjoiTWFoYW1tYWQiLCJmYW1pbHlfbmFtZSI6Ik1hbmFmb3YiLCJqdGkiOiI4MjUxNDQzMC1lZGVhLTQ5MjUtYTg4NC1lOWRkMWU1Y2M0NzEiLCJleHAiOjE3Mjg1ODg3MTcsImlzcyI6IkJ1YmJlckRpbm5lciIsImF1ZCI6IkJ1YmJlckRpbm5lciJ9.r7J1xJwrYq1-CcGZszyAC49uR4SmYjzLyhE00-JV3g0
+
+
+ 
