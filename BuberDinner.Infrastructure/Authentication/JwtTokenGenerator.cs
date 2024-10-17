@@ -23,7 +23,7 @@ namespace BuberDinner.Infrastructure.Authentication
         public string GenerateToken(User user)
         {
             var signInCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Secret)),
-                                                            SecurityAlgorithms.HmacSha256);
+                                                            SecurityAlgorithms.HmacSha256);  
 
             var claims = new[]
             {
