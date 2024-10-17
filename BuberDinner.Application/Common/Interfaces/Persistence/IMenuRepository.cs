@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BuberDinner.Domain.Dinner
+namespace BuberDinner.Application.Common.Interfaces.Persistence
 {
-    internal class Dinner
+    public interface IMenuRepository
     {
     }
 }

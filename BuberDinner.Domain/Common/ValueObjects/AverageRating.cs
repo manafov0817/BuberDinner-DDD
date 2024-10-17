@@ -6,7 +6,8 @@ namespace BuberDinner.Domain.Common.ValueObjects
     {
         public AverageRating(double value, int numRatings)
         {
-
+            Value = value;
+            NumRatings = numRatings;
         }
         public double Value { get; private set; }
         public int NumRatings { get; private set; }

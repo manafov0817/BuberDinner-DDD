@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BuberDinner.Domain.Host
+namespace BuberDinner.Application.Menu.Commands.CreateMenu
 {
-    internal class Host
+    internal class CreateMenuCommandHandler
     {
     }
 }

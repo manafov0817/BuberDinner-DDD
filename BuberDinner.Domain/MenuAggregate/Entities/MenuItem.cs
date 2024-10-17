@@ -10,8 +10,8 @@ namespace BuberDinner.Domain.Menu.Entities
             Name = name;
             Description = description;
         }
-        public string Name { get; set; }
-        public string Description { get; set; }
+        public string Name { get; }
+        public string Description { get;  }
         public static MenuItem Create(string name, string description) => new(MenuItemId.CreateUnique(), name, description);
     }
 }

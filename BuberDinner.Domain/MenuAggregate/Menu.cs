@@ -27,7 +27,7 @@ namespace BuberDinner.Domain.Menu
         public HostId HostId { get; }
         public string Name { get; }
         public string Description { get; }
-        public AverageRating AverageRating { get; }
+        public AverageRating AverageRating { get;   }
 
         private readonly List<MenuSection> _sections = new();
         private readonly List<MenuReviewId> _menuReviewIds = new();

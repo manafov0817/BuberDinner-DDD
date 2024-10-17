@@ -11,9 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Dinner\Entities\" />
-    <Folder Include="Host\Entities\" />
-    <Folder Include="MenuReview\Entities\" />
+    <Folder Include="HostAggregate\Entities\" />
+    <Folder Include="MenuReviewAggregate\Entities\" />
   </ItemGroup>
 
 </Project>
