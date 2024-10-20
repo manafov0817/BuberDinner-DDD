@@ -2,11 +2,11 @@
 using BuberDinner.Domain.Common.ValueObjects;
 using BuberDinner.Domain.Dinner.ValueObjects;
 using BuberDinner.Domain.Host.ValueObjects;
-using BuberDinner.Domain.Menu.Entities;
-using BuberDinner.Domain.Menu.ValueObjects;
+using BuberDinner.Domain.MenuAggregate.Entities;
+using BuberDinner.Domain.MenuAggregate.ValueObjects;
 using BuberDinner.Domain.MenuReview.ValueObjects;
 
-namespace BuberDinner.Domain.Menu
+namespace BuberDinner.Domain.MenuAggregate
 {
     public sealed class Menu : AggregateRoot<MenuId>
     {
@@ -14,6 +14,8 @@ namespace BuberDinner.Domain.Menu
                     string name,
                     string description,
                     HostId hostId,
+                    AverageRating rating,
+                    List<MenuSection>? menuSections,
                     DateTime createdDateTime,
                     DateTime updatedDateTime) : base(menuId)
         {
@@ -22,6 +24,7 @@ namespace BuberDinner.Domain.Menu
             HostId = hostId;
             CreatedDateTime = createdDateTime;
             UpdatedDateTime = updatedDateTime;
+            _sections = menuSections;
         }
 
         public HostId HostId { get; }
@@ -37,5 +40,19 @@ namespace BuberDinner.Domain.Menu
         public IReadOnlyList<MenuSection> Sections => _sections.AsReadOnly();
         public IReadOnlyList<MenuReviewId> MenuReviewIds => _menuReviewIds.AsReadOnly();
         public IReadOnlyList<DinnerId> DinnerIds => _dinnerIds.AsReadOnly();
+        public static Menu Create(string name,
+                                  string description,
+                                  HostId hostId,
+                                  List<MenuSection>? menuSections)
+        {
+            return new Menu(MenuId.CreateUnique(),
+                            name,
+                            description,
+                            hostId,
+                            AverageRating.CreateNew(5,1),
+                            menuSections,
+                            DateTime.Now,
+                            DateTime.Now);
+        }
     }
 }

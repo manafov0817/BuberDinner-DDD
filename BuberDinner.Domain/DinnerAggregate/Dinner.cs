@@ -2,7 +2,7 @@
 using BuberDinner.Domain.Dinner.ValueObjects;
 using BuberDinner.Domain.DinnerAggregate.Entities;
 using BuberDinner.Domain.Host.ValueObjects;
-using BuberDinner.Domain.Menu.ValueObjects;
+using BuberDinner.Domain.MenuAggregate.ValueObjects;
 
 namespace BuberDinner.Domain.Dinner
 {

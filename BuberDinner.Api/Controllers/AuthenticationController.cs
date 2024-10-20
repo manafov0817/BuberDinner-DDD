@@ -5,11 +5,12 @@ using BuberDinner.Contracts.Authentitaction;
 using ErrorOr;
 using MapsterMapper;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BuberDinner.Api.Controllers
 {
-    [ApiController]
+    [AllowAnonymous]
     [Route("auth")]
     public class AuthenticationController : ApiController
     {

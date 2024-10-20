@@ -1,7 +1,7 @@
 ﻿using BuberDinner.Domain.Common.Models;
 using BuberDinner.Domain.Dinner.ValueObjects;
 using BuberDinner.Domain.Host.ValueObjects;
-using BuberDinner.Domain.Menu.ValueObjects;
+using BuberDinner.Domain.MenuAggregate.ValueObjects;
 using BuberDinner.Domain.UserAggregate.ValueObjects;
 
 namespace BuberDinner.Domain.Host

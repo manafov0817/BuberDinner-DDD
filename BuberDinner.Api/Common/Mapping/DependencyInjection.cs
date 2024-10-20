@@ -2,7 +2,7 @@
 using MapsterMapper;
 using System.Reflection;
 
-namespace BuberDinner.Api.Mapping
+namespace BuberDinner.Api.Common.Mapping
 {
     public static class DependencyInjection
     {
