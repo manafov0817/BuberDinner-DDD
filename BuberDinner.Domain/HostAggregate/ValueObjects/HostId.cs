@@ -12,7 +12,8 @@ namespace BuberDinner.Domain.Host.ValueObjects
         }
 
         public static HostId CreateUnique() => new(Guid.NewGuid());
-        public static HostId Create(string value) => new HostId( new Guid(value));
+        public static HostId Create(string value) => Create(new Guid(value));
+        public static HostId Create(Guid value) => new HostId(value);
 
         public override IEnumerable<object> GetEqualityComponents()
         {
